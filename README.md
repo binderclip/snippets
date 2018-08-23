@@ -1,2 +1,2 @@
 # snippets
-Snippets of many language.
+Snippets of many languages.
