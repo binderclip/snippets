@@ -1,3 +1,8 @@
 {
-    "foo": "bar"
+    "foo": "bar",
+    "list": [
+        "one",
+        "two",
+        "three"
+    ]
 }
