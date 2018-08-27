@@ -1,5 +1,23 @@
 # regex usage
 
+## get text
+
+```text
+iOS (\d+.\d+.\d+)
+
+Android (\d+.\d+.\d+)
+```
+
+```text
+foo/1.0.3 (iPhone; iOS 11.4.1; Scale/3.00)
+to
+11.4.1
+
+Dalvik/2.1.0 (Linux; U; Android 8.0.0; SM-N9500 Build/R16NW) foo/1.0.1 Build/101
+to
+8.0.0
+```
+
 ## split text
 
 ```text
