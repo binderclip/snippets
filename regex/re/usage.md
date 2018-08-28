@@ -3,8 +3,8 @@
 ## get text
 
 ```text
+(Android|iOS) (\d+.\d+.\d+)
 iOS (\d+.\d+.\d+)
-
 Android (\d+.\d+.\d+)
 ```
 
