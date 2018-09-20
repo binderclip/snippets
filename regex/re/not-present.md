@@ -1,6 +1,6 @@
 # not present regex
 
-```text
+```re
 [^a]
 
 [^ab\s]
