@@ -1,0 +1,32 @@
+{
+    "_id": "iresearch-cat-top1",
+    "startUrl": [
+        "http://index.iresearch.com.cn/app#container"
+    ],
+    "selectors": [
+        {
+            "id": "cat",
+            "type": "SelectorElementClick",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "div.all a.sort-item, div.sort-cont a.sort-item.ng-binding",
+            "multiple": true,
+            "delay": "1000",
+            "clickElementSelector": "div.all a.sort-item, div.sort-cont a.sort-item.ng-binding",
+            "clickType": "clickMore",
+            "discardInitialElements": false,
+            "clickElementUniquenessType": "uniqueText"
+        },
+        {
+            "id": "top-item",
+            "type": "SelectorElement",
+            "parentSelectors": [
+                "cat"
+            ],
+            "selector": "td.col3.ng-binding",
+            "multiple": false,
+            "delay": 0
+        }
+    ]
+}

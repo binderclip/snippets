@@ -1,0 +1,50 @@
+{
+    "_id": "geek-time",
+    "startUrl": [
+        "https://time.geekbang.org/column/112"
+    ],
+    "selectors": [
+        {
+            "id": "post-item",
+            "type": "SelectorElementScroll",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "div.article-item-wrapper",
+            "multiple": true,
+            "delay": "1000"
+        },
+        {
+            "id": "title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "post-item"
+            ],
+            "selector": "h2.article-item-title",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "link",
+            "type": "SelectorLink",
+            "parentSelectors": [
+                "post-item"
+            ],
+            "selector": "a.article-item-more-text",
+            "multiple": false,
+            "delay": 0
+        },
+        {
+            "id": "first-comment",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "link"
+            ],
+            "selector": "li.comment-item:nth-of-type(1) div.bd",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}

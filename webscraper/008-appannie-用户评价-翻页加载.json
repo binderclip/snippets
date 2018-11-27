@@ -1,0 +1,33 @@
+{
+    "_id": "appannie-review",
+    "startUrl": [
+        "https://www.appannie.com/apps/ios/app/foodie-chi-huo-bi-bei-mei-shi-xiang-ji/reviews/?order_by=date&order_type=desc&date=2018-10-27~2018-11-26&translate_selected=false&granularity=weekly&stack&percent=false&series=rating_star_1,rating_star_2,rating_star_3,rating_star_4,rating_star_5&country=CN"
+    ],
+    "selectors": [
+        {
+            "id": "review-row",
+            "type": "SelectorElementClick",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "tr.main-row",
+            "multiple": true,
+            "delay": "2000",
+            "clickElementSelector": "button.btn.fa-angle-right",
+            "clickType": "clickMore",
+            "discardInitialElements": false,
+            "clickElementUniquenessType": "uniqueCSSSelector"
+        },
+        {
+            "id": "review",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "review-row"
+            ],
+            "selector": "div.original-review",
+            "multiple": false,
+            "regex": "",
+            "delay": "0"
+        }
+    ]
+}
