@@ -1,0 +1,29 @@
+{
+    "_id": "xiachufang-user-recipes",
+    "startUrl": [
+        "http://www.xiachufang.com/cook/117571982/created/"
+    ],
+    "selectors": [
+        {
+            "id": "recipe",
+            "type": "SelectorElementScroll",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "div.recipe-280",
+            "multiple": true,
+            "delay": "2000"
+        },
+        {
+            "id": "title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "recipe"
+            ],
+            "selector": "p.name a",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "_id": "zhihu-follower",
+    "startUrl": [
+        "https://www.zhihu.com/people/he-jia-86/followers?page=[1-2]"
+    ],
+    "selectors": [
+        {
+            "id": "Followers",
+            "type": "SelectorElement",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "div.List-item",
+            "multiple": true,
+            "delay": 0
+        },
+        {
+            "id": "name",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "Followers"
+            ],
+            "selector": "div.UserItem-title a.UserLink-link",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        },
+        {
+            "id": "desc",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "Followers"
+            ],
+            "selector": "div.RichText",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}

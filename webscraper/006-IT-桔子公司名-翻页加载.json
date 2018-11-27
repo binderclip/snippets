@@ -1,0 +1,33 @@
+{
+    "_id": "itjuzi-company-name",
+    "startUrl": [
+        "https://www.itjuzi.com/search?data=%E4%BA%B2%E5%AD%90"
+    ],
+    "selectors": [
+        {
+            "id": "company-item",
+            "type": "SelectorElementClick",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "ul.list-normal a",
+            "multiple": true,
+            "delay": 0,
+            "clickElementSelector": "p.more span",
+            "clickType": "clickMore",
+            "discardInitialElements": false,
+            "clickElementUniquenessType": "uniqueCSSSelector"
+        },
+        {
+            "id": "title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "company-item"
+            ],
+            "selector": "h4",
+            "multiple": false,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}
