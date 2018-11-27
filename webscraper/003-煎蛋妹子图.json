@@ -1,0 +1,18 @@
+{
+    "_id": "jiandan-ooxx",
+    "startUrl": [
+        "http://jandan.net/ooxx/page-38#comments"
+    ],
+    "selectors": [
+        {
+            "id": "image",
+            "type": "SelectorImage",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "p:nth-of-type(1) img",
+            "multiple": true,
+            "delay": 0
+        }
+    ]
+}

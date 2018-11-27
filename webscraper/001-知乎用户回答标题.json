@@ -1,0 +1,19 @@
+{
+    "_id": "zhihu-user-answer-title",
+    "startUrl": [
+        "https://www.zhihu.com/people/huangyoucan/answers?page=[1-7]"
+    ],
+    "selectors": [
+        {
+            "id": "title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "h2.ContentItem-title a",
+            "multiple": true,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}

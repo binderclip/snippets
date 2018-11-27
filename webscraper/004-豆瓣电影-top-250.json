@@ -1,0 +1,19 @@
+{
+    "_id": "douban-movie-top",
+    "startUrl": [
+        "https://movie.douban.com/top250?start=[0-255:25]&filter="
+    ],
+    "selectors": [
+        {
+            "id": "title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "div.hd a",
+            "multiple": true,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}

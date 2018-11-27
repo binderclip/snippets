@@ -1,0 +1,19 @@
+{
+    "_id": "wechat-mp-sogou-search-title",
+    "startUrl": [
+        "https://weixin.sogou.com/weixin?query=%E4%B8%89%E8%8A%82%E8%AF%BE&_sug_type_=&sut=6920&lkt=1%2C1543326693952%2C1543326693952&s_from=input&_sug_=y&type=2&sst0=1543326694056&page=[1-82]&ie=utf8&w=01019900&dr=1"
+    ],
+    "selectors": [
+        {
+            "id": "title",
+            "type": "SelectorText",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "h3 a",
+            "multiple": true,
+            "regex": "",
+            "delay": 0
+        }
+    ]
+}
