@@ -1,0 +1,61 @@
+{
+    "_id": "appannie-review-table",
+    "startUrl": [
+        "https://www.appannie.com/apps/ios/app/foodie-chi-huo-bi-bei-mei-shi-xiang-ji/reviews/?order_by=date&order_type=desc&date=2018-10-27~2018-11-26&translate_selected=false&granularity=weekly&stack&percent=false&series=rating_star_1,rating_star_2,rating_star_3,rating_star_4,rating_star_5&country=CN"
+    ],
+    "selectors": [
+        {
+            "id": "table-page",
+            "type": "SelectorElementClick",
+            "parentSelectors": [
+                "_root"
+            ],
+            "selector": "div.dashboard-table > div",
+            "multiple": true,
+            "delay": "2000",
+            "clickElementSelector": "button.btn.fa-angle-right",
+            "clickType": "clickMore",
+            "discardInitialElements": false,
+            "clickElementUniquenessType": "uniqueCSSSelector"
+        },
+        {
+            "id": "table",
+            "type": "SelectorTable",
+            "parentSelectors": [
+                "table-page"
+            ],
+            "selector": "table",
+            "multiple": false,
+            "columns": [
+                {
+                    "header": "评级",
+                    "name": "评级",
+                    "extract": true
+                },
+                {
+                    "header": "评价",
+                    "name": "评价",
+                    "extract": true
+                },
+                {
+                    "header": "日期",
+                    "name": "日期",
+                    "extract": true
+                },
+                {
+                    "header": "国家/地区",
+                    "name": "国家/地区",
+                    "extract": true
+                },
+                {
+                    "header": "版本",
+                    "name": "版本",
+                    "extract": true
+                }
+            ],
+            "delay": "1000",
+            "tableDataRowSelector": "tr.main-row",
+            "tableHeaderRowSelector": "thead tr:nth-of-type(1)"
+        }
+    ]
+}
