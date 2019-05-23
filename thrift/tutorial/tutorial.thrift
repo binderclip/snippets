@@ -33,3 +33,8 @@ service Calculator extends shared.SharedService {
 
     oneway void zip(),
 }
+
+service Calculator2 extends shared.SharedService {
+    void ping(),
+    i32 subtract(1:i32 num1, 2:i32 num2),
+}
